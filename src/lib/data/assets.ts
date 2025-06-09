@@ -70,7 +70,21 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	GMU: a('gmu.png'),
+	GITAM: a('gitam.png'),
+	CSharp: a('CSharp.png'),
+	SQL: a('SQL.png'),
+	TensorFlow: a('TensorFlow.png'),
+	Unity: a('Unity.png'),
+	ScikitLearn: a('ScikitLearn.png'),
+	HuggingFace: a('HuggingFace.png'),
+	VSCode: a('VSCode.png'),
+	Jupyter: a('Jupyter.png'),
+	Git: a('Git.png'),
+	PlasticSCM: a('PlasticSCM.png')
+
+
 };
 
 export default Assets;

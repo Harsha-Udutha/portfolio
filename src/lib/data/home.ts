@@ -3,39 +3,32 @@ import { getSkills } from './skills';
 
 export const title = 'Home';
 
-export const name = 'Name';
-
-export const lastName = 'LastName';
+export const name = 'Harsha';
+export const lastName = 'Udutha';
 
 export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
+	"I'm a Computer Science graduate passionate about building intelligent, user-centric systems. With hands-on experience in mobile development, game development, machine learning, and real-time wearable sensor applications, I specialize in developing impactful solutions—from stress prediction apps to data-driven dashboards and scalable web tools.";
 
 export const links: Array<{ platform: Platform; link: string }> = [
-	{ platform: Platform.GitHub, link: 'https://github.com/' },
+	{ platform: Platform.GitHub, link: 'https://github.com/Harsha-Udutha' },
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
-	},
-	{
-		platform: Platform.Twitter,
-		link: 'https://twitter.com/'
-	},
-	{
-		platform: Platform.StackOverflow,
-		link: 'https://stackoverflow.com/'
+		link: 'https://www.linkedin.com/in/harsha-udutha/'
 	},
 	{
 		platform: Platform.Email,
-		link: 'riadh_adrani@hotmail.fr'
-	},
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com'
-	},
-	{
-		platform: Platform.Facebook,
-		link: 'https://www.facebook.com'
+		link: 'mailto:harudu31@gmail.com'
 	}
 ];
 
-export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
+// Actual top skills based on resume
+export const skills = getSkills(
+	'python',
+	'kotlin',
+	'csharp',
+	'scikit-learn',
+	'tensorflow',
+	'unity',
+	'git',
+	'android-studio'
+);

@@ -3,28 +3,28 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
+		degree: 'M.S. in Computer Science',
 		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
+		location: 'Fairfax, VA',
+		logo: Assets.GMU, // You can replace this with your GMU logo if you add it to assets
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		organization: 'George Mason University',
+		period: { from: new Date(2023, 7, 21), to: new Date(2025, 5, 14) }, // Aug 2023 to May 2025
+		shortDescription: 'GPA: 3.60 | Relevant: Systems Programming, Data Mining, Algorithms, Graphics, Mobile Dev',
+		slug: 'gmu-ms-cs',
+		subjects: ['Data Mining', 'Algorithms', 'Computer Graphics', 'Mobile Computing', 'Software Engineering']
 	},
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'B.Tech in Computer Science',
 		description: '',
-		location: 'USA',
-		logo: Assets.Unknown,
+		location: 'Visakhapatnam, India',
+		logo: Assets.GITAM, // Replace with GITAM logo if desired
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		organization: 'GITAM University',
+		period: { from: new Date(2019, 4, 1), to: new Date(2023, 3, 1) }, // May 2019 to Apr 2023
+		shortDescription: 'GPA: 3.52 | Relevant: OOP, Data Structures, Networks, AI, Cloud, DBMS',
+		slug: 'gitam-btech-cs',
+		subjects: ['OOP', 'Data Structures', 'Operating Systems', 'Networks', 'DBMS', 'Artificial Intelligence', 'Cloud Computing']
 	}
 ];
 
