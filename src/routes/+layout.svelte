@@ -11,6 +11,18 @@
 	onMount(() => onHydrated());
 </script>
 
+<svelte:head>
+	<title>Harsha Udutha | Portfolio</title>
+	<meta name="description" content="Portfolio of Harsha Udutha — Software Developer, Mobile AI Enthusiast, and Data Engineer." />
+	<!-- <meta property="og:title" content="Harsha Udutha | Portfolio" /> -->
+	<meta property="og:description" content="Explore Harsha's projects, resume, and skills in software engineering, data science, and wearable AI development." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://harsha-udutha.github.io/portfolio" />
+	<meta property="og:image" content="https://harsha-udutha.github.io/portfolio/preview.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+</svelte:head>
+
+
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
 	<NavMenu />
 	<div class="content container"><slot /></div>

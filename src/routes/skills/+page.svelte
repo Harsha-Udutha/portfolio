@@ -16,6 +16,10 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Harsha Udutha | Skills</title>
+</svelte:head>
+
 <SearchPage {title} on:search={onSearch}>
 	{#if result.length === 0}
 		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">

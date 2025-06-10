@@ -25,6 +25,10 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Harsha Udutha | Experience</title>
+</svelte:head>
+
 <SearchPage {title} on:search={onSearch}>
 	<div class="col items-center relative mt-10 flex-1">
 		{#if result.length === 0}

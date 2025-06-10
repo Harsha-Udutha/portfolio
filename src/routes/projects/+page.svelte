@@ -70,6 +70,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Harsha Udutha | Projects</title>
+</svelte:head>
+
 <SearchPage {title} on:search={onSearch}>
 	<div class="projects-filters">
 		{#each filters as tech}
