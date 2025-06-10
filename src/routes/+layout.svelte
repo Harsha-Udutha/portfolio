@@ -20,8 +20,6 @@
 	<meta property="og:url" content="https://harsha-udutha.github.io/portfolio" />
 	<meta property="og:image" content="https://harsha-udutha.github.io/portfolio/preview.png" />
 	<meta name="twitter:card" content="summary_large_image" />
-
-	<meta name="google-site-verification" content="ry5AI0prba_dm8i3czu6xp4qaqb-CSP42YkMH7vqMCc" />
 </svelte:head>
 
 
