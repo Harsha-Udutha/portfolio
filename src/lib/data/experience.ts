@@ -29,7 +29,7 @@ export const items: Array<Experience> = [
 		contract: ContractType.Internship,
 		type: 'Game Development',
 		location: 'Remote',
-		period: { from: new Date(2022, 4, 1), to: new Date(2023, 3, 30) }, // May 2022 – Apr 2023
+		period: { from: new Date(2021, 4, 1), to: new Date(2023, 3, 30) }, // May 2022 – Apr 2023
 		skills: getSkills('csharp', 'unity', 'git', 'plasticscm'),
 		name: 'Unity Developer Intern',
 		color: 'purple',
