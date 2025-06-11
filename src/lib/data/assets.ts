@@ -82,7 +82,8 @@ const Assets = {
 	VSCode: a('VSCode.png'),
 	Jupyter: a('Jupyter.png'),
 	Git: a('Git.png'),
-	PlasticSCM: a('PlasticSCM.png')
+	PlasticSCM: a('PlasticSCM.png'),
+	VS: a('VS.png')
 
 
 };
