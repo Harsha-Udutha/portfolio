@@ -28,4 +28,4 @@ export const items: Array<Education> = [
 	}
 ];
 
-export const title = 'Education';
+export const title = 'EDUCATION';

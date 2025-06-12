@@ -226,7 +226,7 @@ export const items = [
 	}),
 ] as const;
 
-export const title = 'Skills';
+export const title = 'SKILLS';
 
 export const getSkills = (
 	...slugs: Array<StringWithAutoComplete<(typeof items)[number]['slug']>>

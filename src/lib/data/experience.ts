@@ -41,7 +41,7 @@ export const items: Array<Experience> = [
 		slug: 'student-coordinator-gitam',
 		company: 'GITAM Career Guidance Centre',
 		description:
-			'As a student coordinator, I guided over 400 students through international application processes and study-abroad pathways. I designed and analyzed surveys to capture student preferences, used Python and Excel to clean and visualize response data, and built dashboards that helped faculty identify popular destinations and in-demand programs. I also helped organize large-scale university events, ensured data confidentiality, and facilitated communication between students and external university partners — combining technical skills with leadership in a high-responsibility environment.',
+			'As a student coordinator, I guided over 400 students through international application processes and study-abroad pathways. I designed and analyzed surveys to capture student preferences, used Python and Excel to clean and visualize response data, and built dashboards that helped faculty identify popular destinations and in-demand programs. I also helped organize large-scale university events, ensured data confidentiality, and facilitated communication between students and external university partners — combining technical skills with leadership in a high-responsibility environment. Recognized by faculty for leadership, teamwork, and communication; received a recommendation letter citing academic and personal strengths.',
 		contract: ContractType.Volunteer,
 		type: 'Career Services / Analytics',
 		location: 'Onsite: Visakhapatnam, India',
@@ -53,7 +53,7 @@ export const items: Array<Experience> = [
 		logo: Assets.GITAM,
 		shortDescription: 'Organized career guidance events and created dashboards for academic advising.'
 	},
-		{
+	{
 		slug: 'data-intern-tcr',
 		company: 'TCR Innovations',
 		description:
@@ -61,14 +61,23 @@ export const items: Array<Experience> = [
 		contract: ContractType.Internship,
 		type: 'Data Science',
 		location: 'Remote',
-		period: { from: new Date(2022, 4, 1), to: new Date(2022, 5, 30) }, // May 2022 – Jun 2022
+		period: { from: new Date(2022, 3, 26), to: new Date(2022, 7, 14) },
 		skills: getSkills('python', 'scikit-learn', 'pandas'),
 		name: 'Data Science Summer Intern',
 		color: 'blue',
-		links: [],
+		links: [
+			{
+				to: 'https://drive.google.com/file/d/1XA9_agFPIENpyJmcGnjqi2LZp9BWxvQT/view?usp=sharing',
+				label: 'Letter of Recommendation'
+			},
+			{
+				to: 'https://verification.givemycertificate.com/v/664f4687-0246-4876-9bee-304b01fed6c7',
+				label: 'Certificate'
+			}
+		],
 		logo: Assets.Python ?? Assets.Unknown,
 		shortDescription: 'Built ML models and performed data analysis to predict employee attrition.'
 	}
 ];
 
-export const title = 'Experience';
+export const title = 'EXPERIENCE';

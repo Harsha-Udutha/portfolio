@@ -2,7 +2,7 @@ import type { Certificate } from '../types';
 import Assets from './assets';
 import { links } from './home';
 
-export const title = 'Certifications';
+export const title = 'CERTIFICATIONS';
 
 export const items: Array<Certificate> = [
 

@@ -7,7 +7,7 @@ export const name = 'Harsha';
 export const lastName = 'Udutha';
 
 export const description =
-	"I'm a Computer Science graduate passionate about building intelligent, user-centric systems. With hands-on experience in mobile development, game development, machine learning, and real-time wearable sensor applications, I specialize in developing impactful solutions—from stress prediction apps to data-driven dashboards and scalable web tools.";
+	"I'm a curious coder 🧠, caffeinated thinker ☕, and freshly minted Computer Science graduate 🎓 who loves turning ideas into smart, user-friendly tech 💡. Whether it's building mobile apps that predict stress before you even feel it 📱😅, crafting VR zombie games on a student budget 🧟‍♂️🎮, or wrangling machine learning models into useful insights 🤖📊 — I bring code to life. With hands-on experience in Android dev 🤓📱, Unity games 🕹️, wearable tech ⌚, and data science 📈, I thrive on blending logic with creativity to make technology feel HUMAN.";
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/Harsha-Udutha' },
@@ -20,6 +20,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 		link: 'mailto:harudu31@gmail.com'
 	}
 ];
+
 
 // Actual top skills based on resume
 export const skills = getSkills(
