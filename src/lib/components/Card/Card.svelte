@@ -13,6 +13,7 @@
 	export let classes: Array<string> = [];
 	export let href: undefined | string = undefined;
 	export let bgImg: string | undefined = undefined;
+	
 
 	$: computedColor = isHexColor(color) ? color : convertNamedToHexColor(color as NamedColor);
 	$: borderColor = changeColorOpacity(computedColor, 0.5);
@@ -67,9 +68,8 @@
 	{href}
 	bind:this={el}
 	on:mousemove={onHover}
-	class={`card text-inherit decoration-none inline-flex flex-col border-1px border-solid border-[var(--border)] rounded-15px duration relative ${classes.join(
-		' '
-	)}`}
+	{...$$restProps}
+	class={`card text-inherit decoration-none inline-flex flex-col border-1px border-solid border-[var(--border)] rounded-15px duration relative ${classes.join(' ')}`}
 	style:bgColor={'red'}
 >
 	<div class="card-bg-img flex-1 flex flex-col p-25px rounded-15px">

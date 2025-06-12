@@ -6,8 +6,12 @@
 	import * as experiences from '@data/experience';
 	import * as projects from '@data/projects';
 	import * as skills from '@data/skills';
+	import * as certifications from '@data/certifications';
+
 
 	import type { Icon, Item, Skill } from '$lib/types';
+	import type { Certificate } from '$lib/types';
+
 
 	import SearchPage from '$lib/components/SearchPage.svelte';
 	import Chip from '$lib/components/Chip/Chip.svelte';
@@ -30,6 +34,20 @@
 		query = searchParams.get('q') ?? '';
 		mounted = true;
 	});
+
+	function isCertificate(item: unknown): item is Certificate {
+		return (
+			typeof item === 'object' &&
+			item !== null &&
+			'name' in item &&
+			'issuer' in item &&
+			'link' in item &&
+			'slug' in item
+		);
+	}
+
+
+
 
 	$: {
 		result = [];
@@ -55,6 +73,20 @@
 				to: `skills/${data.slug}`
 			}))
 		);
+
+		result.push(
+			...filterItemsByQuery(certifications.items as unknown as ItemOrSkill[], query)
+				.filter(isCertificate)
+				.map<SearchResultItem>((data) => ({
+					data,
+					icon: 'i-carbon-certificate',
+					name: `${data.name} (${data.issuer})`,
+					to: `certifications#${data.slug}`
+				}))
+		);
+
+
+
 
 		result.push(
 			...filterItemsByQuery(experiences.items, query).map<SearchResultItem>((data) => ({

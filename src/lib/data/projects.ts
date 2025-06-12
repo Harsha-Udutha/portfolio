@@ -1,13 +1,15 @@
 import Assets from './assets';
 import { getSkills } from './skills';
 import type { Project } from '../types';
+import { getAssetURL } from '$lib/data/assets';
+
 
 export const items: Array<Project> = [
 	{
 		slug: 'predictive-stress-monitoring',
 		color: '#34a853',
 		description:
-			'A real-time stress prediction system that uses physiological sensor data from a Galaxy Watch. Integrated a TensorFlow Lite model, Wear OS ↔ Android communication, rolling buffer, and contextual logic (e.g., caffeine, exercise) to suppress false positives and deliver early warnings.',
+		'Predictive Stress Monitoring is a real-time mobile AI system designed to anticipate stress episodes using physiological and contextual data from a smartwatch. The backend model was trained on a combination of four public datasets: WESAD, AffectiveROAD, Nurse Stress Dataset, and the Smartwatch Health Dataset. After preprocessing and aligning features like heart rate variability (HRV), step count, and motion signals, a LightGBM classifier was initially trained to predict stress labels. Later, the model was re-trained using TensorFlow, converted to TensorFlow Lite, and optimized for mobile inference. A rolling 3-minute buffer on the Android phone collects live sensor data from the Galaxy Watch 4 using the Wear OS Data Layer API. This buffer helps detect sustained physiological changes, avoiding false positives caused by temporary activity spikes. Context-aware logic suppresses stress alerts during or after caffeine intake or exercise. When potential stress is predicted, the app triggers synchronized notifications on both the phone and watch and asks the user to confirm their recent context. The project involved Android development in Kotlin, real-time sensor streaming, bidirectional device communication, and on-device machine learning using TFLite—all working together to deliver proactive, intelligent mental health support.',
 		shortDescription:
 			'Real-time stress detection using heart rate, step count, motion sensors, and TensorFlow Lite.',
 		links: [
@@ -19,7 +21,34 @@ export const items: Array<Project> = [
 			from: new Date(2025, 0, 1), to: new Date(2025, 3, 31)
 		},
 		skills: getSkills('python', 'kotlin', 'tensorflow', 'android-studio', 'git'),
-		type: 'Mobile AI System'
+		type: 'Mobile AI System',
+		screenshots: [
+			{
+				src: '/project/stressPredictive/1.png',
+				label: 'Wearable data communication in Android Studio Logcat'
+			},
+			{
+				src: '/project/stressPredictive/2.png',
+				label: 'User prompted with contextual alert when stress predicted'
+			},
+			{
+				src: '/project/stressPredictive/5.png',
+				label: 'Prompted user if pressed "YES"'
+			},
+			{
+				src: '/project/stressPredictive/4.png',
+				label: 'Prompted user if pressed "NO"'
+			},
+			{
+				src: '/project/stressPredictive/3.png',
+				label: 'Stress notification alert on Android system tray'
+			},
+			{
+				src: '/project/stressPredictive/Media1.mp4',
+				label: 'Demo'
+			}
+		]
+
 	},
 
 	{

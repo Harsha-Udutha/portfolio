@@ -80,3 +80,13 @@ export interface Education<S extends string = string> extends Item<S> {
 	subjects: Array<string>;
 	degree: string;
 }
+
+export type Certificate = {
+	slug: string;
+	name: string;
+	issuer: string;
+	// year: number;
+	// grade?: string;
+	logo?: string;
+	link : string;
+};

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount, onDestroy } from 'svelte';
+	import { browser } from '$app/environment';
 	import UIcon from '../Icon/UIcon.svelte';
 
 	export let screenshot: { src: string; label: string } | undefined = undefined;
@@ -8,7 +10,26 @@
 	};
 
 	$: show = typeof screenshot !== 'undefined';
+
+	function handleKeydown(event: KeyboardEvent) {
+		if (event.key === 'Escape') {
+			onClose();
+		}
+	}
+
+	onMount(() => {
+		if (browser) {
+			window.addEventListener('keydown', handleKeydown);
+		}
+	});
+
+	onDestroy(() => {
+		if (browser) {
+			window.removeEventListener('keydown', handleKeydown);
+		}
+	});
 </script>
+
 
 {#if show}
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -41,10 +62,19 @@
 					<UIcon icon={'i-carbon-close'} />
 				</button>
 			</div>
-			<div
-				class="aspect-video col bg-contain w-100% rounded-xl bg-no-repeat bg-contains bg-center"
-				style={`background-image: url(${screenshot?.src});`}
-			/>
+			{#if screenshot?.src.endsWith('.mp4')}
+				<video
+					src={screenshot.src}
+					controls
+					autoplay
+					class="aspect-video w-full rounded-xl"
+				/>
+			{:else}
+				<div
+					class="aspect-video col bg-contain w-100% rounded-xl bg-no-repeat bg-contains bg-center"
+					style={`background-image: url(${screenshot?.src});`}
+				/>
+			{/if}
 			<p
 				class="font-italic m-t-auto m-x-auto bg-[var(--main-60)] border-solid border-1px border-[var(--border)] p-x-5 p-2 rounded-xl"
 			>

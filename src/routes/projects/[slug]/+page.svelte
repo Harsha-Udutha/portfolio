@@ -105,10 +105,18 @@
 								on:keyup
 								on:keyup
 							>
+							{#if item.src.endsWith('.mp4')}
+								<video
+									src={item.src}
+									controls
+									class="screenshot aspect-video w-full rounded-10px"
+								/>
+							{:else}
 								<div
 									class="screenshot aspect-video bg-contain w-100% cursor-pointer"
 									style={`background-image: url(${item.src});`}
 								/>
+							{/if}
 								<p class="text-[var(--tertiary-text)] font-300">{item.label}</p>
 							</div>
 						{/each}
