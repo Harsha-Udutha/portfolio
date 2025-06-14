@@ -89,4 +89,5 @@ export type Certificate = {
 	// grade?: string;
 	logo?: string;
 	link : string;
+	category?: 'core' | 'extra';
 };
