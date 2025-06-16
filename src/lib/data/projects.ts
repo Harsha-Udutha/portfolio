@@ -149,22 +149,22 @@ export const items: Array<Project> = [
 	}
 	
 	
-	// ,{
-	// 	slug: 'parking-violation-prediction',
-	// 	color: '#ea4335',
-	// 	description:
-	// 		'Used NYC open data to identify parking violation hotspots. Engineered features from timestamps and location data, applied classification models (Random Forest, Logistic Regression), and visualized insights for city planning.',
-	// 	shortDescription:
-	// 		'ML model to predict high-risk parking violation zones in NYC.',
-	// 	links: [],
-	// 	logo: Assets.Python ?? Assets.Unknown,
-	// 	name: 'Parking Violation Prediction',
-	// 	period: {
-	// 		from: new Date(2022, 4, 1), to: new Date(2022,5,30)
-	// 	},
-	// 	skills: getSkills('python', 'scikit-learn', 'git'),
-	// 	type: 'Data Science Project'
-	// }
+	,{
+		slug: 'parking-violation-prediction',
+		color: '#ea4335',
+		description:
+			'Used NYC open data to identify parking violation hotspots. Engineered features from timestamps and location data, applied classification models (Random Forest, Logistic Regression), and visualized insights for city planning.',
+		shortDescription:
+			'ML model to predict high-risk parking violation zones in NYC.',
+		links: [],
+		logo: Assets.Python ?? Assets.Unknown,
+		name: 'Parking Violation Prediction',
+		period: {
+			from: new Date(2022, 4, 1), to: new Date(2022,5,30)
+		},
+		skills: getSkills('python', 'scikit-learn', 'git'),
+		type: 'Data Science Project'
+	}
 ];
 
 export const title = 'PROJECTS';
