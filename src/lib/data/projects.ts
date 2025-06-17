@@ -147,8 +147,6 @@ export const items: Array<Project> = [
 			}
 		]
 	}
-	
-	
 	,{
 		slug: 'parking-violation-prediction',
 		color: '#ea4335',
@@ -164,7 +162,23 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('python', 'scikit-learn', 'git'),
 		type: 'Data Science Project'
-	}
+	},
+
+	{
+	slug: 'buzz-vs-aldrin',
+	name: 'Buzz vs. Aldrin',
+	description:
+		`A sci-fi adventure where players control Aldrin, a boy battling light-sensitive, metal-eating bugs inside his billion-dollar smart home somewhere in the space. Players use futuristic gravity-shift movement to explore the high-tech apartment, catch the Light-attracting Swarms, and capture 100 swarms before total system failure.`,
+	shortDescription:
+		'Sci-fi game with gravity-shift mechanics, light attracted bugs, and a suspenseful futuristic setting.',
+	type: 'Game Development',
+	color: 'gray',
+	period: { from: new Date(2023, 5, 1), to: new Date(2023, 7, 1) },
+	skills: getSkills('unity', 'csharp','blender', 'problem-solving'),
+	logo: Assets.Unity ?? Assets.Unknown,
+	links: [{ to: 'https://github.com/Harsha-Udutha/Buzz-Aldrin', label: 'GitHub' }],
+}
+
 ];
 
 export const title = 'PROJECTS';
