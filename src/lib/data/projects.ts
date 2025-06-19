@@ -177,7 +177,32 @@ export const items: Array<Project> = [
 	skills: getSkills('unity', 'csharp','blender', 'problem-solving'),
 	logo: Assets.Unity ?? Assets.Unknown,
 	links: [{ to: 'https://github.com/Harsha-Udutha/Buzz-Aldrin', label: 'GitHub' }],
-}
+	},
+	{
+	slug: 'cs-department-survey-gmu',
+	name: 'CS Department Survey Tool – GMU',
+	description:
+		`Designed and developed an internal survey tool for the Computer Science department at George Mason University to collect feedback from visitors and students during departmental visits and events. The system included a dynamic form interface, backend data recording, and simple analytics. The tool improved data collection efficiency and helped the department understand common queries, satisfaction levels, and recurring feedback. Built using HTML, CSS`,
+	shortDescription:
+		'Survey form system for GMU’s CS department to collect visitor feedback and analytics.',
+	type: 'Web Utility',
+	color: '#9c27b0',
+	period: { from: new Date(2022, 9, 1), to: new Date(2022, 10, 15) }, // Adjust if needed
+	skills: getSkills('html', 'css', 'firebase', 'javascript'),
+	logo: Assets.HTML ?? Assets.Unknown,
+	links: [{to: 'https://github.com/Harsha-Udutha/SWE642_Ass2', label:'Github'}],
+	screenshots: [
+		{
+			src: `${base}/project/CS_Survey/1.jpeg`,
+			label: 'CS Department Page'
+		},
+		{
+			src: `${base}/project/CS_Survey/2.jpeg`,
+			label: 'Survey Form Interface'
+		}
+	]
+	}
+
 
 ];
 
