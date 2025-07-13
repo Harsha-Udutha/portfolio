@@ -201,9 +201,56 @@ export const items: Array<Project> = [
 			label: 'Survey Form Interface'
 		}
 	]
+	},
+	{
+		slug: 'spunkem-game',
+		name: "Spunk'em Game",
+		description:
+		`Spunk'em is a 3d arcade style space shooter game, defeat enemy spaceships and make your score for every spaceship destroyed and make high score, with the score you have made, that score gets converted to galaxy coins with which you can buy other spaceships, unlock all 13 spaceships and create mass destruction.`,
+		shortDescription:
+			'Arcade style space shooter game built in Unity featuring spaceship enemies, score tracking, and progressive difficulty.',
+		type: 'Game Development',
+		color: '#ff7043',
+		period: { from: new Date(2023, 7, 1), to: new Date(2023, 8, 15) },
+		skills: getSkills('unity', 'csharp', 'game-design', 'animation', 'blender'),
+		logo: Assets.Unity ?? Assets.Unknown,
+		links: [{ to: 'https://github.com/Harsha-Udutha/SpunkemMain', label: 'GitHub (Spunk\'em)' }, { to: 'https://huud-game-studios.itch.io/spunkem', label: 'Itch.io (Spunk\'em)' }, { to: 'https://huudgamestudios.netlify.app/', label: 'Website (HUUD Game Studios)' }],
+		screenshots: [
+			{
+				src: 'https://huudgamestudios.netlify.app/img/1920x1080%201.png',
+				label: ''
+			},
+			{
+				src: 'https://huudgamestudios.netlify.app/img/1920x1080%202.png',
+				label: ''
+			}
+			,
+			{
+				src: 'https://huudgamestudios.netlify.app/img/1920x1080%203.png',
+				label: ''
+			},
+			{
+				src: 'https://huudgamestudios.netlify.app/img/1920x1080%204.png',
+				label: ''
+			},
+			{
+				src: 'https://huudgamestudios.netlify.app/img/1920x1080%205.png',
+				label: ''
+			},
+			{
+				src: 'https://huudgamestudios.netlify.app/img/1920x1080%206.png',
+				label: ''
+			},
+			{
+				src: 'https://huudgamestudios.netlify.app/img/1920x1080%208.png',
+				label: ''
+			},
+			{
+				src: 'https://huudgamestudios.netlify.app/img/1920x1080%209.png',
+				label: ''
+			}
+		]
 	}
-
-
 ];
 
 export const title = 'PROJECTS';
