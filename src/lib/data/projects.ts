@@ -104,7 +104,7 @@ export const items: Array<Project> = [
 		description: `Developed a fully functional virtual reality horror game using Unity and Google Cardboard, aiming to make immersive VR gaming accessible with over 70% cost reduction. The project leveraged affordable VR hardware such as generic headsets and wireless joysticks, integrated through Unity’s XR Toolkit and Google Cardboard API. Designed 3D environments and enemy AI using Unity assets, Blender, and Mixamo, and implemented core gameplay in C#. Features included player health tracking, shooting mechanics, zombie behavior, and user interface. A comprehensive testing phase with 15 participants revealed high immersion (85%) and effective fear response (75%), validating the use of low-cost VR for impactful experiences. The game ran at stable 60+ FPS on Android and Windows platforms, showing its suitability for both education and indie gaming communities.`,
 		shortDescription:
 			'Low-cost VR prototype using smartphones, Cardboard, and Unity.',
-		links: [{ to: 'https://github.com/Harsha-Udutha/VR_Project', label: 'GitHub (Economical VR)' }],
+		links: [{ to: 'https://github.com/Harsha-Udutha/VR_Project', label: 'GitHub (Economical VR)' }, { to: 'https://drive.google.com/file/d/166hOs10Cp38itMelLSREd4KBnw98Vaud/view?usp=drive_link', label: 'Letter Of Appreciation' }],
 		logo: Assets.Unity ?? Assets.Unknown,
 		name: 'Economical VR Gaming System',
 		period: {
