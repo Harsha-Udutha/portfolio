@@ -15,7 +15,7 @@ export const items: Array<Experience> = [
 		period: { from: new Date(2025, 8, 1),}, // Sep 2025 – Present
 		skills: getSkills('csharp', 'unity', 'game-dev'),
 		name: 'Game Developer Intern',
-		color: 'pink',
+		color: 'gold',
 		links: [],
 		logo: Assets.UPG ?? Assets.Unknown,
 		shortDescription: 'Worked on gameplay systems and build optimization for Unity-based VR/PC titles.'
@@ -32,7 +32,7 @@ export const items: Array<Experience> = [
 		period: { from: new Date(2025, 7, 1), }, // Aug 2025 – Present
 		skills: getSkills('react', 'typescript', 'firebase', 'web-accessibility'),
 		name: 'Lead Web Developer – Volunteer',
-		color: 'green',
+		color: 'lightblue',
 		links: [],
 		logo: Assets.VSV ?? Assets.Unknown,
 		shortDescription: 'Led accessibility and web modernization for nonprofit platforms using React and Firebase.'
@@ -48,7 +48,7 @@ export const items: Array<Experience> = [
 		period: { from: new Date(2024, 7, 1), to: new Date(2025, 4, 31) }, // Aug 2021 – Dec 2021
 		skills: getSkills('python', 'pandas', 'matplotlib'),
 		name: 'Outdoor Supervisor',
-		color: 'orange',
+		color: 'lime',
 		links: [],
 		logo: Assets.GMU,
 		shortDescription: 'Managed sports ground usage and performed data reporting for university scheduling.'
@@ -65,7 +65,7 @@ export const items: Array<Experience> = [
 		period: { from: new Date(2021, 4, 1), to: new Date(2023, 3, 30) }, // May 2022 – Apr 2023
 		skills: getSkills('csharp', 'unity', 'git', 'plasticscm'),
 		name: 'Unity Developer Intern',
-		color: 'purple',
+		color: 'yellow',
 		links: [],
 		logo: Assets.Arnxt ?? Assets.Unknown,
 		shortDescription: 'Developed gameplay systems and performed QA for a Unity-based metaverse platform.'
@@ -97,7 +97,7 @@ export const items: Array<Experience> = [
 		period: { from: new Date(2022, 3, 26), to: new Date(2022, 7, 14) },
 		skills: getSkills('python', 'scikit-learn', 'pandas'),
 		name: 'Data Science Summer Intern',
-		color: 'blue',
+		color: 'white',
 		links: [
 			{
 				to: 'https://drive.google.com/file/d/1XA9_agFPIENpyJmcGnjqi2LZp9BWxvQT/view?usp=sharing',
