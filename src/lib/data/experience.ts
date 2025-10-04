@@ -4,7 +4,40 @@ import { ContractType, type Experience } from '../types';
 
 export const items: Array<Experience> = [	
 
-		{
+	{
+		slug: 'game-dev-upg',
+		company: 'Universal Phoenix Group LLC',
+		description:
+			'At Universal Phoenix Group, I contributed to early prototyping and gameplay programming for VR/PC game titles using Unity and C#. My work focused on implementing interactive mechanics, improving build stability, and resolving performance bottlenecks. I participated in Agile sprints, collaborated in code reviews, and aligned technical tasks with creative vision and project milestones — helping shape engaging immersive experiences.',
+		contract: ContractType.Internship,
+		type: 'Game Development',
+		location: 'Remote: Georgia, United States',
+		period: { from: new Date(2025, 8, 1),}, // Sep 2025 – Present
+		skills: getSkills('csharp', 'unity', 'game-dev'),
+		name: 'Game Developer Intern',
+		color: 'pink',
+		links: [],
+		logo: Assets.UPG ?? Assets.Unknown,
+		shortDescription: 'Worked on gameplay systems and build optimization for Unity-based VR/PC titles.'
+	},
+
+	{
+		slug: 'web-dev-vsv',
+		company: 'Visionary Solutions of Virginia',
+		description:
+			'I served as a volunteer Lead Web Developer where I revamped nonprofit websites by addressing accessibility issues and modernizing outdated technical stacks. I migrated legacy Wix pages into scalable React + Firebase prototypes, implemented Section 508 compliance features like alt-text and ARIA labels, and ensured cross-device responsiveness with professional UI design. My contributions made the site more inclusive, maintainable, and visually consistent.',
+		contract: ContractType.Volunteer,
+		type: 'Web Development / Accessibility',
+		location: 'Remote: Virginia, United States',
+		period: { from: new Date(2025, 7, 1), }, // Aug 2025 – Present
+		skills: getSkills('react', 'typescript', 'firebase', 'web-accessibility'),
+		name: 'Lead Web Developer – Volunteer',
+		color: 'green',
+		links: [],
+		logo: Assets.VSV ?? Assets.Unknown,
+		shortDescription: 'Led accessibility and web modernization for nonprofit platforms using React and Firebase.'
+	},
+	{
 		slug: 'outdoor-supervisor-gmu',
 		company: 'George Mason University',
 		description:
@@ -34,7 +67,7 @@ export const items: Array<Experience> = [
 		name: 'Unity Developer Intern',
 		color: 'purple',
 		links: [],
-		logo: Assets.Unity ?? Assets.Unknown,
+		logo: Assets.Arnxt ?? Assets.Unknown,
 		shortDescription: 'Developed gameplay systems and performed QA for a Unity-based metaverse platform.'
 	},
 	{
@@ -75,7 +108,7 @@ export const items: Array<Experience> = [
 				label: 'Certificate'
 			}
 		],
-		logo: Assets.Python ?? Assets.Unknown,
+		logo: Assets.TCR ?? Assets.Unknown,
 		shortDescription: 'Built ML models and performed data analysis to predict employee attrition.'
 	}
 ];

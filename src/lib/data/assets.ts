@@ -83,8 +83,11 @@ const Assets = {
 	Jupyter: a('Jupyter.png'),
 	Git: a('Git.png'),
 	PlasticSCM: a('PlasticSCM.png'),
-	VS: a('VS.png')
-
+	VS: a('VS.png'),
+	Arnxt:a('arnxt_logo.jpeg'),
+	TCR:a('TCR_Logo.jpeg'),
+	UPG:a('UPG.jpeg'),
+	VSV:a('visionary_solutions_of_virginia_logo.jpeg')
 
 };
 
