@@ -1,45 +1,43 @@
 import Assets from './assets';
 import { getSkills } from './skills';
 import type { Project } from '../types';
-import { getAssetURL } from '$lib/data/assets';
 import { base } from '$app/paths';
-
-
 
 export const items: Array<Project> = [
 	{
 		slug: 'predictive-stress-monitoring',
 		color: '#34a853',
 		description:
-		'Predictive Stress Monitoring is a real-time mobile AI system designed to anticipate stress episodes using physiological and contextual data from a smartwatch. The backend model was trained on a combination of four public datasets: WESAD, AffectiveROAD, Nurse Stress Dataset, and the Smartwatch Health Dataset. After preprocessing and aligning features like heart rate variability (HRV), step count, and motion signals, a LightGBM classifier was initially trained to predict stress labels. Later, the model was re-trained using TensorFlow, converted to TensorFlow Lite, and optimized for mobile inference. A rolling 3-minute buffer on the Android phone collects live sensor data from the Galaxy Watch 4 using the Wear OS Data Layer API. This buffer helps detect sustained physiological changes, avoiding false positives caused by temporary activity spikes. Context-aware logic suppresses stress alerts during or after caffeine intake or exercise. When potential stress is predicted, the app triggers synchronized notifications on both the phone and watch and asks the user to confirm their recent context. The project involved Android development in Kotlin, real-time sensor streaming, bidirectional device communication, and on-device machine learning using TFLite—all working together to deliver proactive, intelligent mental health support.',
+			'Predictive Stress Monitoring is a mobile AI system that uses smartwatch and phone sensor data to detect potential stress patterns in real time. The project combines Wear OS data collection, Android development in Kotlin, sensor buffering, preprocessing, and TensorFlow Lite inference. I trained and converted a machine learning model for mobile use, then built a rolling 3-minute data window to reduce false positives caused by temporary movement or activity spikes. The app uses heart rate, step count, accelerometer, gyroscope, and contextual inputs to trigger stress alerts on both the phone and smartwatch. This project strengthened my experience in applied machine learning, mobile data pipelines, real-time sensor processing, and on-device AI.',
 		shortDescription:
-			'Real-time stress detection using heart rate, step count, motion sensors, and TensorFlow Lite.',
+			'Mobile AI system that uses smartwatch sensor data and TensorFlow Lite to predict stress in real time.',
 		links: [
 			{ to: 'https://github.com/Harsha-Udutha/StressPrediction', label: 'GitHub (Watch + Phone)' }
 		],
 		logo: Assets.Android ?? Assets.Unknown,
 		name: 'Predictive Stress Monitoring',
 		period: {
-			from: new Date(2025, 0, 1), to: new Date(2025, 3, 31)
+			from: new Date(2025, 0, 1),
+			to: new Date(2025, 3, 31)
 		},
 		skills: getSkills('python', 'kotlin', 'tensorflow', 'android-studio', 'git'),
 		type: 'Mobile AI System',
 		screenshots: [
 			{
-			src: `${base}/project/stressPredictive/1.png`,
-			label: 'Data communication in Logcat'
+				src: `${base}/project/stressPredictive/1.png`,
+				label: 'Data communication in Logcat'
 			},
 			{
 				src: `${base}/project/stressPredictive/2.png`,
-				label: 'Prompted with contextual alert'
+				label: 'Contextual stress alert prompt'
 			},
 			{
 				src: `${base}/project/stressPredictive/5.png`,
-				label: 'Prompted user if pressed "YES"'
+				label: 'User context confirmation flow'
 			},
 			{
 				src: `${base}/project/stressPredictive/4.png`,
-				label: 'Prompted user if pressed "NO"'
+				label: 'Follow-up prompt after user response'
 			},
 			{
 				src: `${base}/project/stressPredictive/3.png`,
@@ -50,16 +48,15 @@ export const items: Array<Project> = [
 				label: 'Demo - After Gaming Session'
 			}
 		]
-
 	},
 
 	{
 		slug: 'tradeplay-marketplace',
 		color: '#fbbc05',
 		description:
-			'A web app concept for exchanging games and consoles. Includes user authentication, profile management, and game listings using Firebase. AI-powered modules are planned for fraud detection, smart pricing, search, and toxic content moderation.',
+			'TradePlay is an ongoing marketplace project for gamers to list, discover, and exchange physical games, consoles, and accessories. The project is focused on building clean product workflows such as listings, user profiles, item details, search, trade requests, chat-style communication, and community discussion features. I am using this project to strengthen my software design, data modeling, user-flow planning, and product development skills while keeping the scope realistic and expandable. Future improvements may include smarter search, pricing insights, and moderation workflows based on structured listing and user activity data.',
 		shortDescription:
-			'A community-driven marketplace for buying/trading games and accessories.',
+			'Ongoing marketplace project for trading games, consoles, and accessories with structured product workflows.',
 		links: [
 			{ to: 'https://github.com/Harsha-Udutha/TradePlay', label: 'GitHub (TRADEPLAY)' }
 		],
@@ -68,16 +65,16 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date(2025, 5, 1)
 		},
-		skills: getSkills('html', 'css', 'firebase', 'python', 'git'),
-		type: 'Web App',
+		skills: getSkills('html', 'css', 'sql', 'python', 'git'),
+		type: 'Ongoing Software Project',
 		screenshots: [
 			{
-			src: `${base}/project/tradePlay/1.png`,
-			label: 'Landing Page'
+				src: `${base}/project/tradePlay/1.png`,
+				label: 'Landing Page'
 			},
 			{
 				src: `${base}/project/tradePlay/2.png`,
-				label: 'Lisitngs'
+				label: 'Listings'
 			},
 			{
 				src: `${base}/project/tradePlay/3.png`,
@@ -99,23 +96,77 @@ export const items: Array<Project> = [
 	},
 
 	{
+		slug: 'parking-violation-prediction',
+		color: '#ea4335',
+		description:
+			'Parking Violation Prediction is a data science project focused on analyzing parking violation patterns using public city data. The project involved cleaning raw records, engineering useful features from timestamps and location fields, exploring violation trends, and training machine learning models to identify higher-risk violation patterns. This project helped strengthen my skills in Python, data preprocessing, exploratory analysis, feature engineering, and model evaluation.',
+		shortDescription:
+			'Python data science project for analyzing parking violation patterns using preprocessing and ML workflows.',
+		links: [],
+		logo: Assets.Python ?? Assets.Unknown,
+		name: 'Parking Violation Prediction',
+		period: {
+			from: new Date(2025, 0, 1),
+			to: new Date(2025, 2, 31)
+		},
+		skills: getSkills('python', 'scikit-learn', 'sql', 'git'),
+		type: 'Data Science Project'
+	},
+
+	{
+		slug: 'cs-department-survey-gmu',
+		name: 'CS Department Survey Tool – GMU',
+		description:
+			'Designed and developed a survey tool for the Computer Science department at George Mason University to collect visitor and student feedback during departmental visits and events. The system included a structured form interface, response collection, and simple reporting support to help organize feedback more efficiently. This project strengthened my experience with web forms, data collection workflows, validation, and user-centered interface design.',
+		shortDescription:
+			'Survey form system for collecting CS department visitor feedback and organizing response data.',
+		type: 'Web Utility / Data Collection',
+		color: '#9c27b0',
+		period: {
+			from: new Date(2025, 1, 1),
+			to: new Date(2025, 2, 15)
+		},
+		skills: getSkills('html', 'css', 'git'),
+		logo: Assets.HTML ?? Assets.Unknown,
+		links: [{ to: 'https://github.com/Harsha-Udutha/SWE642_Ass2', label: 'GitHub' }],
+		screenshots: [
+			{
+				src: `${base}/project/CS_Survey/1.jpeg`,
+				label: 'CS Department Page'
+			},
+			{
+				src: `${base}/project/CS_Survey/2.jpeg`,
+				label: 'Survey Form Interface'
+			}
+		]
+	},
+
+	{
 		slug: 'vr-gaming-cardboard',
 		color: '#4285f4',
-		description: `Developed a fully functional virtual reality horror game using Unity and Google Cardboard, aiming to make immersive VR gaming accessible with over 70% cost reduction. The project leveraged affordable VR hardware such as generic headsets and wireless joysticks, integrated through Unity’s XR Toolkit and Google Cardboard API. Designed 3D environments and enemy AI using Unity assets, Blender, and Mixamo, and implemented core gameplay in C#. Features included player health tracking, shooting mechanics, zombie behavior, and user interface. A comprehensive testing phase with 15 participants revealed high immersion (85%) and effective fear response (75%), validating the use of low-cost VR for impactful experiences. The game ran at stable 60+ FPS on Android and Windows platforms, showing its suitability for both education and indie gaming communities.`,
+		description:
+			'Economical VR Gaming System is a low-cost virtual reality horror game prototype built with Unity and Google Cardboard. The project explored how smartphone-based VR, affordable headsets, and wireless controller input could deliver an immersive game experience without expensive dedicated VR hardware. I designed and implemented gameplay mechanics, player health, shooting interactions, enemy behavior, UI elements, and Android deployment workflows. The project helped me build a strong foundation in Unity, C#, XR development, performance testing, and interactive system design.',
 		shortDescription:
-			'Low-cost VR prototype using smartphones, Cardboard, and Unity.',
-		links: [{ to: 'https://github.com/Harsha-Udutha/VR_Project', label: 'GitHub (Economical VR)' }, { to: 'https://drive.google.com/file/d/166hOs10Cp38itMelLSREd4KBnw98Vaud/view?usp=drive_link', label: 'Letter Of Appreciation' }],
+			'Low-cost VR horror game prototype built with Unity, Google Cardboard, and Android deployment.',
+		links: [
+			{ to: 'https://github.com/Harsha-Udutha/VR_Project', label: 'GitHub (Economical VR)' },
+			{
+				to: 'https://drive.google.com/file/d/166hOs10Cp38itMelLSREd4KBnw98Vaud/view?usp=drive_link',
+				label: 'Letter Of Appreciation'
+			}
+		],
 		logo: Assets.Unity ?? Assets.Unknown,
 		name: 'Economical VR Gaming System',
 		period: {
-			from: new Date(2023, 1, 1), to: new Date(2023,3, 1)
+			from: new Date(2023, 1, 1),
+			to: new Date(2023, 3, 1)
 		},
 		skills: getSkills('csharp', 'unity', 'android-studio', 'git'),
 		type: 'VR System Prototype',
 		screenshots: [
 			{
-			src: `${base}/project/VR_Project/1.png`,
-			label: 'UI'
+				src: `${base}/project/VR_Project/1.png`,
+				label: 'UI'
 			},
 			{
 				src: `${base}/project/VR_Project/2.jpg`,
@@ -146,114 +197,81 @@ export const items: Array<Project> = [
 				label: 'Enemy AI'
 			}
 		]
-	}
-	
-	// ,{
-	// 	slug: 'parking-violation-prediction',
-	// 	color: '#ea4335',
-	// 	description:
-	// 		'Used NYC open data to identify parking violation hotspots. Engineered features from timestamps and location data, applied classification models (Random Forest, Logistic Regression), and visualized insights for city planning.',
-	// 	shortDescription:
-	// 		'ML model to predict high-risk parking violation zones in NYC.',
-	// 	links: [],
-	// 	logo: Assets.Python ?? Assets.Unknown,
-	// 	name: 'Parking Violation Prediction',
-	// 	period: {
-	// 		from: new Date(2022, 4, 1), to: new Date(2022,5,30)
-	// 	},
-	// 	skills: getSkills('python', 'scikit-learn', 'git'),
-	// 	type: 'Data Science Project'
-	// }
+	},
 
-	,{
-	slug: 'buzz-vs-aldrin',
-	name: 'Buzz vs. Aldrin',
-	description:
-		`A sci-fi adventure where players control Aldrin, a boy battling light-sensitive, metal-eating bugs inside his billion-dollar smart home somewhere in the space. Players use futuristic gravity-shift movement to explore the high-tech apartment, catch the Light-attracting Swarms, and capture 100 swarms before total system failure.`,
-	shortDescription:
-		'Sci-fi game with gravity-shift mechanics, light attracted bugs, and a suspenseful futuristic setting.',
-	type: 'Game Development',
-	color: 'gray',
-	period: { from: new Date(2023, 5, 1), to: new Date(2023, 7, 1) },
-	skills: getSkills('unity', 'csharp','blender', 'problem-solving'),
-	logo: Assets.Unity ?? Assets.Unknown,
-	links: [{ to: 'https://github.com/Harsha-Udutha/Buzz-Aldrin', label: 'GitHub' }],
-	},
-	{
-	slug: 'cs-department-survey-gmu',
-	name: 'CS Department Survey Tool – GMU',
-	description:
-		`Designed and developed an internal survey tool for the Computer Science department at George Mason University to collect feedback from visitors and students during departmental visits and events. The system included a dynamic form interface, backend data recording, and simple analytics. The tool improved data collection efficiency and helped the department understand common queries, satisfaction levels, and recurring feedback. Built using HTML, CSS`,
-	shortDescription:
-		'Survey form system for GMU’s CS department to collect visitor feedback and analytics.',
-	type: 'Web Utility',
-	color: '#9c27b0',
-	period: { from: new Date(2022, 9, 1), to: new Date(2022, 10, 15) }, // Adjust if needed
-	skills: getSkills('html', 'css', 'firebase', 'javascript'),
-	logo: Assets.HTML ?? Assets.Unknown,
-	links: [{to: 'https://github.com/Harsha-Udutha/SWE642_Ass2', label:'Github'}],
-	screenshots: [
-		{
-			src: `${base}/project/CS_Survey/1.jpeg`,
-			label: 'CS Department Page'
-		},
-		{
-			src: `${base}/project/CS_Survey/2.jpeg`,
-			label: 'Survey Form Interface'
-		}
-	]
-	},
 	{
 		slug: 'spunkem-game',
 		name: "Spunk'em Game",
 		description:
-		`Spunk'em is a 3d arcade style space shooter game, defeat enemy spaceships and make your score for every spaceship destroyed and make high score, with the score you have made, that score gets converted to galaxy coins with which you can buy other spaceships, unlock all 13 spaceships and create mass destruction.`,
+			"Spunk'em is a 3D arcade-style space shooter built in Unity. Players destroy enemy spaceships, build a high score, earn galaxy coins, and unlock a collection of playable ships. I worked on the core gameplay loop, enemy spawning, scoring, progression, ship unlocks, and presentation flow. The project reflects my early game development foundation in Unity, C#, gameplay scripting, UI flow, and iterative playtesting.",
 		shortDescription:
-			'Arcade style space shooter game built in Unity featuring spaceship enemies, score tracking, and progressive difficulty.',
+			'3D arcade-style Unity space shooter with enemy waves, scoring, progression, and unlockable ships.',
 		type: 'Game Development',
 		color: '#ff7043',
-		period: { from: new Date(2023, 7, 1), to: new Date(2023, 8, 15) },
-		skills: getSkills('unity', 'csharp', 'game-design', 'animation', 'blender'),
+		period: {
+			from: new Date(2023, 7, 1),
+			to: new Date(2023, 8, 15)
+		},
+		skills: getSkills('unity', 'csharp', 'problem-solving', 'git'),
 		logo: Assets.Unity ?? Assets.Unknown,
-		links: [{ to: 'https://github.com/Harsha-Udutha/SpunkemMain', label: 'GitHub (Spunk\'em)' }, { to: 'https://huud-game-studios.itch.io/spunkem', label: 'Itch.io (Spunk\'em)' }, { to: 'https://huudgamestudios.netlify.app/', label: 'Website (HUUD Game Studios)' }],
+		links: [
+			{ to: 'https://github.com/Harsha-Udutha/SpunkemMain', label: "GitHub (Spunk'em)" },
+			{ to: 'https://huud-game-studios.itch.io/spunkem', label: "Itch.io (Spunk'em)" },
+			{ to: 'https://huudgamestudios.netlify.app/', label: 'Website (HUUD Game Studios)' }
+		],
 		screenshots: [
 			{
 				src: 'https://huudgamestudios.netlify.app/img/1920x1080%201.png',
-				label: ''
+				label: 'Gameplay Screenshot'
 			},
 			{
 				src: 'https://huudgamestudios.netlify.app/img/1920x1080%202.png',
-				label: ''
-			}
-			,
+				label: 'Gameplay Screenshot'
+			},
 			{
 				src: 'https://huudgamestudios.netlify.app/img/1920x1080%203.png',
-				label: ''
+				label: 'Gameplay Screenshot'
 			},
 			{
 				src: 'https://huudgamestudios.netlify.app/img/1920x1080%204.png',
-				label: ''
+				label: 'Gameplay Screenshot'
 			},
 			{
 				src: 'https://huudgamestudios.netlify.app/img/1920x1080%205.png',
-				label: ''
+				label: 'Gameplay Screenshot'
 			},
 			{
 				src: 'https://huudgamestudios.netlify.app/img/1920x1080%206.png',
-				label: ''
+				label: 'Gameplay Screenshot'
 			},
 			{
 				src: 'https://huudgamestudios.netlify.app/img/1920x1080%208.png',
-				label: ''
+				label: 'Gameplay Screenshot'
 			},
 			{
 				src: 'https://huudgamestudios.netlify.app/img/1920x1080%209.png',
-				label: ''
+				label: 'Gameplay Screenshot'
 			}
 		]
+	},
+
+	{
+		slug: 'buzz-vs-aldrin',
+		name: 'Buzz vs. Aldrin',
+		description:
+			'Buzz vs. Aldrin is a sci-fi adventure prototype where players control Aldrin, a boy navigating a futuristic smart home while dealing with light-sensitive, metal-eating bugs. The game explored gravity-shift movement, environmental tension, collection goals, and a stylized futuristic setting. I used the project to experiment with Unity gameplay scripting, level flow, mechanic design, and player-object interactions.',
+		shortDescription:
+			'Sci-fi Unity prototype with gravity-shift movement, collection goals, and light-attracted enemies.',
+		type: 'Game Development',
+		color: 'gray',
+		period: {
+			from: new Date(2023, 5, 1),
+			to: new Date(2023, 7, 1)
+		},
+		skills: getSkills('unity', 'csharp', 'problem-solving', 'git'),
+		logo: Assets.Unity ?? Assets.Unknown,
+		links: [{ to: 'https://github.com/Harsha-Udutha/Buzz-Aldrin', label: 'GitHub' }]
 	}
 ];
 
 export const title = 'PROJECTS';
-
-

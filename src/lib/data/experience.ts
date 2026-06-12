@@ -4,6 +4,24 @@ import { ContractType, type Experience } from '../types';
 
 export const items: Array<Experience> = [	
 
+		{
+		slug: 'software-game-dev-lrf',
+		company: 'Live Red Foundation',
+		description:
+			'Worked as a software and game developer on an interactive Unity-based educational game focused on decision-making, resilience, and user behavior tracking. Built gameplay systems, scenario logic, UI interactions, event logging workflows, and debugging tools using Unity and C#. The role combined game development with structured data capture, helping translate player choices and in-game actions into meaningful analytics-ready records.',
+		contract: ContractType.Internship,
+		type: 'Game Development / Data Logging',
+		location: 'Remote: Virginia, United States',
+		period: { from: new Date(2026, 0, 1), to: new Date(2026, 5, 6) },
+		skills: getSkills('csharp', 'unity', 'git', 'problem-solving'),
+		name: 'Full-Cycle Software / Game Developer Intern',
+		color: 'purple',
+		links: [],
+		logo: Assets.LRF ?? Assets.Unknown,
+		shortDescription:
+			'Built Unity gameplay systems, interaction logic, and analytics-ready event logging workflows.'
+	},
+
 	{
 		slug: 'game-dev-upg',
 		company: 'Universal Phoenix Group LLC',
@@ -29,7 +47,7 @@ export const items: Array<Experience> = [
 		contract: ContractType.Volunteer,
 		type: 'Web Development / Accessibility',
 		location: 'Remote: Virginia, United States',
-		period: { from: new Date(2025, 7, 1), }, // Aug 2025 – Present
+		period: { from: new Date(2025, 7, 1), to: new Date(2026, 0, 31) }, // Aug 2025 – Jan 2026
 		skills: getSkills('react', 'typescript', 'firebase', 'web-accessibility'),
 		name: 'Lead Web Developer – Volunteer',
 		color: 'lightblue',

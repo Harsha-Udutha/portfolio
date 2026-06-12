@@ -87,7 +87,8 @@ const Assets = {
 	Arnxt:a('arnxt_logo.jpeg'),
 	TCR:a('TCR_Logo.jpeg'),
 	UPG:a('UPG.jpeg'),
-	VSV:a('visionary_solutions_of_virginia_logo.jpeg')
+	VSV:a('visionary_solutions_of_virginia_logo.jpeg'),
+	LRF: a('lrf.png')
 
 };
 
