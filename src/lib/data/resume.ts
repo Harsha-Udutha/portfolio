@@ -1,3 +1,5 @@
-export const data = 'https://drive.google.com/file/d/1IIVnHnN38cs3d-HsEbcDQqefagirSIEp/view?usp=sharing';
+import { base } from '$app/paths';
+
+export const data = `${base}/resume/Harsha_Udutha_Resume.pdf`;
 
 export const title = 'RESUME';

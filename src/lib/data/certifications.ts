@@ -5,8 +5,8 @@ export const title = 'CERTIFICATIONS';
 
 export const items: Array<Certificate> = [
 	{
-		name: 'Post Graduate Certificate Program In Software Engineering For Data Science',
-		issuer: 'International Institute of Information Technology - Hyderabad',
+		name: 'Post Graduate Certificate Program in Software Engineering for Data Science',
+		issuer: 'IIIT Hyderabad / Great Learning',
 		logo: Assets.Python,
 		link: 'https://www.mygreatlearning.com/certificate/ROAOVUEZ',
 		slug: 'software-engineering-data-science-iiit-hyderabad',
